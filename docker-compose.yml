@@ -28,3 +28,8 @@ services:
       - POSTGRES_USER=djangoproject
       - POSTGRES_PASSWORD=djangoproject
       - POSTGRES_DB=djangoproject
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
